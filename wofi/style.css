@@ -1,0 +1,73 @@
+/* Claude-inspired Wofi theme */
+
+window {
+    margin: 0px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    font-family: "Sans", sans-serif;
+    font-size: 14px;
+    color: #373737;
+    border: 2px solid #e5e5e5;
+}
+
+#input {
+    margin: 12px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    box-shadow: none;
+    color: #333333;
+}
+
+#input:focus {
+    border: 1px solid #8a2be2;
+}
+
+#outer-box {
+    margin: 0px;
+    padding: 0px;
+    background-color: #ffffff;
+    border-radius: 12px;
+}
+
+#scroll {
+    margin: 6px 12px;
+    padding: 0px;
+    border: none;
+}
+
+#inner-box {
+    margin: 0px;
+    padding: 0px;
+    background-color: #ffffff;
+    border: none;
+}
+
+#entry {
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 2px;
+}
+
+#entry:selected {
+    background-color: #f0e6fb;
+    border-radius: 8px;
+    outline: none;
+}
+
+#text {
+    margin: 0px 8px;
+    padding: 0px;
+    color: #333333;
+}
+
+#text:selected {
+    color: #5c2c91;
+    font-weight: bold;
+}
+
+#img {
+    margin-right: 8px;
+}
