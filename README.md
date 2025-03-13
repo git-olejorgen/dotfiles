@@ -9,3 +9,6 @@ ln -sf ~/.dotfiles/hypr/hyprpaper.conf ~/.config/hypr/hyprpaper.conf
 # wofi (application launcher)
 ln -sf ~/.dotfiles/wofi/config ~/.config/wofi/config
 ln -sf ~/.dotfiles/wofi/style.css ~/.config/wofi/style.css
+
+# kitty (terminal)
+ln -sf ~/.dotfiles/kitty/kitty.conf ~/.config/kitty/kitty.conf
