@@ -12,3 +12,6 @@ ln -sf ~/.dotfiles/wofi/style.css ~/.config/wofi/style.css
 
 # kitty (terminal)
 ln -sf ~/.dotfiles/kitty/kitty.conf ~/.config/kitty/kitty.conf
+
+# NVIM
+ln -sf ~/.dotfiles/nvim ~/.config/nvim
