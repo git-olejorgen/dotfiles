@@ -1,0 +1,39 @@
+#
+# ~/.bashrc
+#
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+# Set CDPATH for easier directory navigation
+export CDPATH=.:$HOME:$HOME/Documents/CS/Projects/personal
+
+# Aliases
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+# Add your project shortcut
+alias cdproj='cd ~/Documents/CS/Projects/personal/Unheard'
+
+# Better looking prompt with git branch info (if git is installed)
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+# Colored prompt with git branch
+PS1='\[\033[01;32m\][\u@\h\[\033[00m\] \[\033[01;34m\]\W\[\033[01;33m\]$(parse_git_branch)\[\033[00m\]]\$ '
+
+# History settings
+HISTSIZE=10000
+HISTFILESIZE=20000
+HISTCONTROL=ignoreboth  # ignore duplicate commands and commands that start with a space
+
+# Enable tab completion
+if [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+fi
+
+# Enable colors for various commands
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced

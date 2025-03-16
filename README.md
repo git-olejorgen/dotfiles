@@ -15,3 +15,9 @@ ln -sf ~/.dotfiles/kitty/kitty.conf ~/.config/kitty/kitty.conf
 
 # NVIM
 ln -sf ~/.dotfiles/nvim ~/.config/nvim
+
+
+## Symlinks and CDPATH
+
+# This makes it so all subdirs of personal is CD'able from anywheere, just CD Unheard 
+export CDPATH=.:$HOME:$HOME/Documents/CS/Projects/personal
