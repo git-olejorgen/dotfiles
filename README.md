@@ -17,7 +17,7 @@ ln -sf ~/.dotfiles/kitty/kitty.conf ~/.config/kitty/kitty.conf
 ln -sf ~/.dotfiles/nvim ~/.config/nvim
 
 
-## Symlinks and CDPATH
+# various
+added .bashrc - to add CDPATH to project directory so I can just "cd Unheard" instead of "cd ~/Documents/CS/Projects/personal/unheard"
 
-# This makes it so all subdirs of personal is CD'able from anywheere, just CD Unheard 
-export CDPATH=.:$HOME:$HOME/Documents/CS/Projects/personal
+ln -sf ~/.dotfiles/various/bashrc ~/.bashrc
