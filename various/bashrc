@@ -37,3 +37,6 @@ fi
 # Enable colors for various commands
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
+
+
+export QMK_HOME=~/projects/keyboard/qmk_firmware
