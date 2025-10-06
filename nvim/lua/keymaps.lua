@@ -28,3 +28,8 @@ end, { desc = "Toggle diagnostics"})
 vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal left<CR>", {})
 vim.keymap.set("n", "<leader>bf", ":Neotree buffers reveal float<CR>", {})
 
+vim.keymap.set("n", "<leader>dt", function()
+  local datetime = os.date("%d.%m.%Y %H:%M:%S")
+  local line = "## Date: " .. datetime
+  vim.api.nvim_put({line}, "l", true, true)
+end, { desc = "Insert current date/time" })
